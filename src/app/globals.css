@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface2: #1a1a26;
+  --border: #2a2a3a;
+  --text: #e8e8f0;
+  --text2: #8888a0;
+  --accent: #7c5cfc;
+  --accent-hover: #6a4ae8;
+  --green: #34d399;
+  --red: #f87171;
+  --orange: #fb923c;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text2); }
+
+/* Chat messages */
+.chat-bubble-user {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-bubble-other {
+  background: var(--surface2);
+  color: var(--text);
+  border-radius: 18px 18px 18px 4px;
+}
